@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TazzaCode AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= Sidebar ================= -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">🤖</div>
+            <div>
+                <h2>TazzaCode <span>AI</span></h2>
+                <p>Your AI Data Analyst</p>
+            </div>
+        </div>
+
+        <button id="newChatBtn" class="primary-btn">+ New Analysis</button>
+
+        <div class="sidebar-section">
+            <h4>Dataset</h4>
+            <div id="datasetCard" class="dataset-card">No dataset uploaded</div>
+        </div>
+
+        <div class="sidebar-section">
+            <h4>Actions</h4>
+            <button id="cleanBtn" class="sidebar-btn" disabled>🧹 Clean Data</button>
+            <button id="edaBtn" class="sidebar-btn" disabled>📊 Generate EDA</button>
+            <button id="sqlBtn" class="sidebar-btn" disabled>💬 SQL Chat</button>
+            <button id="emailBtn" class="sidebar-btn" disabled>✉ Email Report</button>
+        </div>
+
+        <div class="sidebar-section">
+            <h4>Progress</h4>
+            <div class="progress-item" id="progressClean"><span class="progress-dot"></span> Data Cleaning</div>
+            <div class="progress-item" id="progressEDA"><span class="progress-dot"></span> EDA Generated</div>
+            <div class="progress-item" id="progressReport"><span class="progress-dot"></span> Report Ready</div>
+        </div>
+
+        <div class="sidebar-section">
+            <h4>Downloads</h4>
+            <div id="downloadArea"><p class="muted">Nothing available yet.</p></div>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= Main ================= -->
+    <main class="main">
+
+        <header class="topbar">
+            <div class="agent-status"><span class="green-dot"></span> Agent Ready</div>
+            <label class="upload-btn">
+                Upload Dataset
+                <input id="fileInput" type="file" accept=".csv,.xlsx,.xls" hidden>
+            </label>
+        </header>
+
+        <section id="chatWindow" class="chat-window">
+            <div id="welcomeScreen" class="welcome">
+                <div class="welcome-icon">🤖</div>
+                <h1>Welcome to TazzaCode AI</h1>
+                <p>Upload your CSV or Excel dataset and I'll help you clean it, generate an EDA report,
+                   answer questions, write SQL, and export professional reports.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">🧹<span>Clean Dataset</span></div>
+                    <div class="feature-card">📊<span>Generate EDA</span></div>
+                    <div class="feature-card">💬<span>Ask Questions</span></div>
+                    <div class="feature-card">📄<span>Export Report</span></div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="inputContainer" class="input-container">
+            <input id="chatInput" type="text" placeholder="Upload a dataset to get started..." disabled>
+            <button id="sendBtn" disabled>➜</button>
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- ================= Loading Overlay ================= -->
+<div id="loadingOverlay" class="loading hidden">
+    <div class="loader"></div>
+    <p>AI Agents are working...</p>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
