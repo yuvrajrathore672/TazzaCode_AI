@@ -11,10 +11,17 @@ app = FastAPI(title="TazzaCode AI")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=["https://tazzacode-ai-frontend.onrender.com"], 
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
+@app.get("/")
+def home():
+    return {
+        "message": "TazzaCode AI Backend is running",
+        "status": "healthy"
+    }
 
 
 def get_pending_interrupt(config):
