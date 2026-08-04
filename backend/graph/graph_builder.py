@@ -8,7 +8,7 @@ from langgraph.graph import StateGraph , END , START
 from langgraph.checkpoint.postgres import PostgresSaver
 from psycopg_pool import ConnectionPool
 
-from backend.graph.state import AgentState
+from graph.state import AgentState
 
 from graph.nodes.clean_agent import clean_agent_node, human_review_node , apply_cleaning_node , initial_choice_node
 from graph.nodes.eda_agent import eda_agent_node
