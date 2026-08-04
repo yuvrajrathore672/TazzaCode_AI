@@ -1,6 +1,6 @@
-from backend.tools.sql_analyst_tool import run_sql_tool , built_sql_promt , multistep_reasoning_tool ,clean_sql_response
-from backend.graph.state import AgentState
-from backend.graph.nodes.clean_agent import load_dataframe
+from tools.sql_analyst_tool import run_sql_tool , built_sql_promt , multistep_reasoning_tool ,clean_sql_response
+from graph.state import AgentState
+from graph.nodes.clean_agent import load_dataframe
 
 # -------------------------------------------
 from dotenv import load_dotenv

@@ -10,12 +10,12 @@ from psycopg_pool import ConnectionPool
 
 from backend.graph.state import AgentState
 
-from backend.graph.nodes.clean_agent import clean_agent_node, human_review_node , apply_cleaning_node , initial_choice_node
-from backend.graph.nodes.eda_agent import eda_agent_node
-from backend.graph.nodes.report_generation_agent import report_generation_node
-from backend.graph.nodes.analyst_agent import analyst_agent_node , show_answer_node
-from backend.graph.nodes.validator_agent import validator_agent_node 
-from backend.graph.nodes.final_agent import final_agent_node 
+from graph.nodes.clean_agent import clean_agent_node, human_review_node , apply_cleaning_node , initial_choice_node
+from graph.nodes.eda_agent import eda_agent_node
+from graph.nodes.report_generation_agent import report_generation_node
+from graph.nodes.analyst_agent import analyst_agent_node , show_answer_node
+from graph.nodes.validator_agent import validator_agent_node 
+from graph.nodes.final_agent import final_agent_node 
 
 from PIL import Image
 import io

@@ -1,6 +1,6 @@
 # check whatever analyst_output contains against the real data, before showing it to the user — this is our rejection-loop.
 
-from backend.graph.state import AgentState
+from graph.state import AgentState
 
 # -------------------------------------------
 from dotenv import load_dotenv

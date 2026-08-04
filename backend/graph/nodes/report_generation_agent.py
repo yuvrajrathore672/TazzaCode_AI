@@ -1,5 +1,5 @@
-from backend.graph.state import AgentState
-from backend.graph.nodes.clean_agent import load_dataframe
+from graph.state import AgentState
+from graph.nodes.clean_agent import load_dataframe
 import os
 
 # -------------------------------------------

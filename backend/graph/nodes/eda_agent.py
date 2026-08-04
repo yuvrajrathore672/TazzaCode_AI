@@ -4,8 +4,8 @@ import seaborn as sns
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from backend.graph.state import AgentState
-from backend.graph.nodes.clean_agent import load_dataframe
+from graph.state import AgentState
+from graph.nodes.clean_agent import load_dataframe
 import math
 
 def compute_summary_stats(df):

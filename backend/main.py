@@ -4,8 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from langgraph.types import Command
 import uuid, os
-from backend.graph.graph_builder import workflow
-from backend.tools.email_tool import send_email
+from graph.graph_builder import workflow
+from tools.email_tool import send_email
 
 app = FastAPI(title="TazzaCode AI")
 
