@@ -136,7 +136,7 @@ def assemble_report(report_sections,output_path):
     #dataset overview -
     doc.add_heading("1. Dataset Overview", level=1)
     overview = report_sections["overview"]
-    doc.add_paragraph(f'This dataset contains {overview['row_count']} rows and {overview['column_count']} columns.')
+    doc.add_paragraph(f"This dataset contains {overview['row_count']} rows and {overview['column_count']} columns.")
     doc.add_paragraph(f"Numeric columns: {', '.join(overview['numeric_columns'])}")
     doc.add_paragraph(f"Categorical columns: {', '.join(overview['categorical_columns'])}")
 
