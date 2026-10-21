@@ -12,30 +12,15 @@
 
 ---
 
-## 🎥 Demo
-
-<!-- Replace with your actual video/GIF. A short screen recording showing:
-     upload → cleaning approval → EDA → report → asking a question → email
-     works great as a GIF embedded right here. -->
-
-![Demo GIF](./assets/demo.gif)
-
-📺 [Full walkthrough video](your-video-link-here)
-
----
-
 ## 📸 Screenshots
 
-<!-- Add 3-5 screenshots: upload screen, cleaning approval UI, chat with a
-     table answer, the generated report -->
-
-| Upload & Initial Choice | Cleaning Approval |
+| Home Page | Cleaning Approval |
 |---|---|
-| ![upload](./assets/screenshot-upload.png) | ![cleaning](./assets/screenshot-cleaning.png) |
+| ![upload](./assets/homepage.png) | ![cleaning](./assets/cleaning.png) |
 
-| Chat with SQL Answers | Generated Report |
+| Chat with SQL Answers | EDA Summary |
 |---|---|
-| ![chat](./assets/screenshot-chat.png) | ![report](./assets/screenshot-report.png) |
+| ![chat](./assets/question.png) | ![report](./assets/eda.png) |
 
 ---
 
