@@ -8,7 +8,7 @@ load_dotenv()
 from langchain_groq import ChatGroq
 
 # LLM ---
-model = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.3)
+model = ChatGroq(model="openai/gpt-oss-120b", temperature=0.3)
 
 def llm_call(promt):
     response = model.invoke(promt)
